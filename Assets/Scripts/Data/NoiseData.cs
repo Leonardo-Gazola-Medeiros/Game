@@ -2,7 +2,36 @@ using UnityEngine;
 
 
 [CreateAssetMenu()]
-public class NoiseData : ScriptableObject
+public class NoiseData : UpdatableData
 {
-    public float x;
+
+    public Noise.NormalizeMode normalizeMode;
+
+
+    public float noiseScale;
+    public int octaves;
+    [Range(0,1)]
+    public float persistance;
+    public float lacunarity;
+    public int seed;
+    public Vector2 offset;
+
+
+    protected override void OnValidate()
+    {
+        if (octaves < 0)
+        {
+            octaves = 0;
+        }
+        if (lacunarity < 1)
+        {
+            lacunarity = 1;
+        }
+        if (persistance < 0)
+        {
+            persistance = 0;
+        }
+
+        base.OnValidate();
+    }
 }

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public static class FallofGenerator
+public static class FalloffGenerator
 {
     public static float[,] GenerateFalloffMap(int size)
     {
