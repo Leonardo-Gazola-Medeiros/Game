@@ -33,7 +33,11 @@ public class MapGenerator : MonoBehaviour
 
     void OnTextureValuesUpdated()
     {
-        textureData.ApplyToMaterial(terrainMaterial);
+        textureData.UpdateMeshHeights(
+        terrainMaterial,
+        terrainData.minHeight,
+        terrainData.maxHeight
+        );
     }
 
     public int mapChunkSize
@@ -150,6 +154,8 @@ public class MapGenerator : MonoBehaviour
                 
             }
         }
+
+        textureData.UpdateMeshHeights(terrainMaterial, terrainData.minHeight, terrainData.maxHeight);
 
         return new MapData(noiseMap);
     }
