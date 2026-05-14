@@ -13,3 +13,9 @@ MonoBehaviour:
   m_Name: Default Texture
   m_EditorClassIdentifier: Assembly-CSharp::TextureData
   autoUpdate: 1
+  baseColours:
+  - {r: 0.03203986, g: 0.10755923, b: 0.754717, a: 0}
+  - {r: 0.06127627, g: 0.764151, b: 0.23012294, a: 0}
+  baseStartHeights:
+  - 0
+  - 0.374

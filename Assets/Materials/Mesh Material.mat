@@ -159,9 +159,13 @@ Material:
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
+    - _Height1: 0.08
+    - _Height2: 0.1
+    - _Height3: 0.2
+    - _Height4: 0.37
     - _HeightContrast: 2
     - _HeightTransition: 0
-    - _MaxHeight: 62.5
+    - _MaxHeight: 100
     - _Metallic: 0
     - _Metallic0: 0
     - _Metallic1: 0
@@ -191,6 +195,12 @@ Material:
     m_Colors:
     - _BaseColor: {r: 0.24719654, g: 0.9528302, b: 0.252858, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color1: {r: 0.0745098, g: 0.20058307, b: 0.7647059, a: 1}
+    - _Color2: {r: 0.745283, g: 0.707931, b: 0.4464667, a: 1}
+    - _Color3: {r: 0.15853116, g: 0.5849056, b: 0.10760058, a: 1}
+    - _Color4: {r: 0.026210386, g: 0.2924528, b: 0.02753871, a: 1}
+    - _Color5: {r: 0.3679245, g: 0.1820245, b: 0.0052064694, a: 1}
+    - _Color6: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
